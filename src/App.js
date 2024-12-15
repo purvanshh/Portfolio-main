@@ -41,7 +41,7 @@ function App() {
         projectImg={require('./images/3dNexBot.png')}
     />
 
-      <ProjectCard
+      {/* <ProjectCard
         projectTitle="Animated Card: featuring the latest glassmorphism trend"
         projectDesc="React JS provided me the flexibility needed to create an interactive card with a glass-like effect, which adds a sense of depth and dimension to the user interface"
         projectLink=""
@@ -56,7 +56,7 @@ function App() {
         projectLink=""
         deployedProjectLink=""
         projectImg={require('./images/projectRogfree.png')}
-      />
+      /> */}
       <AboutMe id = 'about' />
       <SkillCard id = 'skills' />
       <ContactForm id = 'contact' />

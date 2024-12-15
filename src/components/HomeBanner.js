@@ -1,7 +1,6 @@
 import React from 'react';
 import "./HomeBannerStyle.css";
-import cartoon from "../images/cartoon-compressed.png";
-
+import cartoon from "../images/AnimeBack.png";
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
@@ -9,7 +8,7 @@ export default function HomeBanner({id}) {
             <div className="wrapper">
               <div className="name">Purvansh Sahu</div>
               <div className="staticTitle">
-                Dopamine-Addict
+              Capturist
               </div>
               <ul className="dynamicTitle">
                 <li>+<span>Developer</span></li>
