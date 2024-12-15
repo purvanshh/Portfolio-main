@@ -32,14 +32,14 @@ function App() {
       <Navbar />
       <HomeBanner id = "home"/>
       <ProjectCard
-        id = "project"
-        className = "odd"
-        projectTitle="Wiggles: Pet Care Made Easy"
-        projectDesc="A one-stop solution for pet data management, automated vaccinations, QR-based lost pet recovery, and organizing pet playdates."
-        projectLink=""
-        deployedProjectLink=""
-        projectImg={require('./images/projectWiggles.png')}
-      />
+        id="project"
+        className="odd"
+        projectTitle="3D Interactive Nexbot"
+        projectDesc="An engaging 3D robot character that tracks and responds to cursor movements, creating an interactive and dynamic user experience through three-dimensional animations."
+        projectLink="https://github.com/purvanshh/Frontend"
+        deployedProjectLink="https://frontend-lemon-delta-24.vercel.app/"
+        projectImg={require('./images/3dNexBot.png')}
+    />
 
       <ProjectCard
         projectTitle="Animated Card: featuring the latest glassmorphism trend"
