@@ -41,15 +41,15 @@ function App() {
         projectImg={require('./images/3dNexBot.png')}
     />
 
-      {/* <ProjectCard
-        projectTitle="Animated Card: featuring the latest glassmorphism trend"
-        projectDesc="React JS provided me the flexibility needed to create an interactive card with a glass-like effect, which adds a sense of depth and dimension to the user interface"
-        projectLink=""
-        deployedProjectLink=""
-        projectImg={require('./images/projectGlassmorphism.png')}
+      { <ProjectCard
+        projectTitle="A Modern Note-Taking & Task Management App"
+        projectDesc="A comprehensive note-taking and to-do list application built with React JS, featuring an intuitive interface for managing both detailed notes and task lists. The app offers seamless organization capabilities allowing users to efficiently capture ideas and track their tasks in one unified platform."
+        projectLink="https://github.com/purvanshh/Advanced-Notion"
+        deployedProjectLink="https://advanced-notion.vercel.app/"
+        projectImg={require('./images/Notetaking.png')}
       />
 
-      <ProjectCard
+      /* <ProjectCard
         className = "odd"
         projectTitle="Rog-free: accessible anytime, anywhere"
         projectDesc="An approach to target and heal specific health conditions by transforming the living room into a yoga studio"
