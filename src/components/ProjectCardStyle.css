@@ -18,6 +18,10 @@
     flex-direction: row-reverse;
 }
 
+.project-wrapper.even {
+    flex-direction: row;
+}
+
 .project-title {
     margin-bottom: 15px;
     font-size: 36px;

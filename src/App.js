@@ -39,24 +39,25 @@ function App() {
         projectLink="https://github.com/purvanshh/Frontend"
         deployedProjectLink="https://frontend-lemon-delta-24.vercel.app/"
         projectImg={require('./images/3dNexBot.png')}
-    />
+      />
 
-      { <ProjectCard
+      <ProjectCard
+        projectTitle="BrainWave"
+        className="even"
+        projectDesc="Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general."
+        projectLink="https://github.com/purvanshh/BrainWave"  
+        deployedProjectLink="https://brainwave-iota-ten.vercel.app/"
+        projectImg={require('./images/brainwave.png')} 
+      />
+
+      <ProjectCard
         projectTitle="A Modern Note-Taking & Task Management App"
+        className="odd"
         projectDesc="A comprehensive note-taking and to-do list application built with React JS, featuring an intuitive interface for managing both detailed notes and task lists. The app offers seamless organization capabilities allowing users to efficiently capture ideas and track their tasks in one unified platform."
         projectLink="https://github.com/purvanshh/Advanced-Notion"
         deployedProjectLink="https://advanced-notion.vercel.app/"
         projectImg={require('./images/Notetaking.png')}
       />
-
-      /* <ProjectCard
-        className = "odd"
-        projectTitle="Rog-free: accessible anytime, anywhere"
-        projectDesc="An approach to target and heal specific health conditions by transforming the living room into a yoga studio"
-        projectLink=""
-        deployedProjectLink=""
-        projectImg={require('./images/projectRogfree.png')}
-      /> */}
       <AboutMe id = 'about' />
       <SkillCard id = 'skills' />
       <ContactForm id = 'contact' />
