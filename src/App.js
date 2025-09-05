@@ -49,15 +49,7 @@ function App() {
         deployedProjectLink="https://brainwave-iota-ten.vercel.app/"
         projectImg={require('./images/brainwave.png')} 
       />
-
-      <ProjectCard
-        projectTitle="A Modern Note-Taking & Task Management App"
-        className="odd"
-        projectDesc="A comprehensive note-taking and to-do list application built with React JS, featuring an intuitive interface for managing both detailed notes and task lists. The app offers seamless organization capabilities allowing users to efficiently capture ideas and track their tasks in one unified platform."
-        projectLink="https://github.com/purvanshh/Advanced-Notion"
-        deployedProjectLink="https://advanced-notion.vercel.app/"
-        projectImg={require('./images/Notetaking.png')}
-      />
+      
       <AboutMe id = 'about' />
       <SkillCard id = 'skills' />
       <ContactForm id = 'contact' />
