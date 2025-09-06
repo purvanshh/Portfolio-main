@@ -1,33 +1,40 @@
 .about-container {
     display: flex;
-    margin: 80px 13vw 0 18vw;
-    padding-top: 60px;
+    position: relative; 
+    margin: 80px 7vw 0 15vw;
+    padding-top: 20px;
+    align-items: flex-start;
+    gap: 2.5rem;
 }
 
 .profile-photo {
-    margin-left: 50px;
+    margin-left: 0;
     height: fit-content;
     padding: 0;
+    width: 320px; /* fixed column for image */
+    flex-shrink: 0;
 }
 
-.profile-photo .heading {
-    font-size: 22px;
+.heading {
+    font-size: 40px;
     font-weight: 600;
-    margin-top: 100px;
+    margin-top: 18px;
     color: #F94892;
 }
 
 .profile-photo .img {
     width: 100%;
-    z-index: -3;
+    max-width: 300px;
+    z-index: 0;
+    display: block;
 }
 
- .about-container .name {
+.about-container .name {
     line-height: 85px;
     position: absolute;
     right: 6.5vw;
     padding-top: 75px;
-    width: 110px;
+    width: 120px;
     overflow-wrap: break-word;
     color: #F94892;
     text-transform: uppercase;
@@ -47,19 +54,22 @@
 .about-container .aboutMe-text {
     font-size: 18px;
     font-weight: 200;
-    color: #fff;
+    color: var(--muted-text);
     height: fit-content;
+    line-height: 1.6;
+    flex: 1 1 60%;
+    max-width: 65ch;
 }
 
 .aboutMe-text span {
-    color: #F94892;
+    color: var(--accent);
 }
 
 .about-container .aboutMe-text h3 {
-    color: #fff;    
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    color: var(--text);    
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 .about-container .aboutMe-text .resume {
