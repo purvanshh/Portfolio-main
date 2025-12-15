@@ -8,6 +8,7 @@ import AboutMe from './components/AboutMe'
 import SkillCard from './components/SkillCard'
 import ContactForm from './components/ContactForm'
 import AnimatedCursor from "react-animated-cursor"
+import Spline from '@splinetool/react-spline';
 
 
 function App() {
@@ -31,6 +32,11 @@ function App() {
 
   return (
     <>
+      {/* Spline 3D Background */}
+      <div className="spline-background">
+        <Spline scene="https://prod.spline.design/c1CILr5VqKGYhoDt/scene.splinecode" />
+      </div>
+
       <AnimatedCursor
         color="#fff"
         innerSize={8}
@@ -46,7 +52,7 @@ function App() {
           backgroundColor: '#F94892'
         }}
       />
-      <div>
+      <div className="main-content">
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <HomeBanner id="home" />
         <ProjectCard
