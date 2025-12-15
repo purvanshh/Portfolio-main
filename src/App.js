@@ -88,6 +88,15 @@ function App() {
           isMobileApp={true}
         />
 
+        <ProjectCard
+          className="odd"
+          projectTitle="MyPA"
+          projectDesc="Your Personal AI Assistant - Blazingly-Fast, Open-source, and Free. Features privacy-first local storage, BYO API keys, Chat Navigator, Google Gemini support, and an optimized React codebase."
+          projectLink="https://github.com/purvanshh/MyPA"
+          deployedProjectLink="https://mypa-omega.vercel.app/chat"
+          projectImg={require('./images/mypa-omega-vercel-app-chat.png')}
+        />
+
         <AboutMe id='about' />
         <SkillCard id='skills' />
         <ContactForm id='contact' />
