@@ -54,15 +54,6 @@ function App() {
       <div className="main-content">
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <HomeBanner id="home" />
-        <ProjectCard
-          id="project"
-          className="odd"
-          projectTitle="3D Interactive Nexbot"
-          projectDesc="An engaging 3D robot character that tracks and responds to cursor movements, creating an interactive and dynamic user experience through three-dimensional animations."
-          projectLink="https://github.com/purvanshh/Frontend"
-          deployedProjectLink="https://frontend-lemon-delta-24.vercel.app/"
-          projectImg={require('./images/3dNexBot.png')}
-        />
 
         <ProjectCard
           projectTitle="BrainWave"
