@@ -30,11 +30,16 @@ function App() {
 
   const toggleTheme = () => setTheme(t => (t === 'light' ? 'dark' : 'light'));
 
+  const [isSplineLoaded, setIsSplineLoaded] = useState(false);
+
   return (
     <>
       {/* Spline 3D Background */}
-      <div className="spline-background">
-        <Spline scene="https://prod.spline.design/c1CILr5VqKGYhoDt/scene.splinecode" />
+      <div className={`spline-background ${isSplineLoaded ? 'fade-in' : ''}`}>
+        <Spline
+          scene="https://prod.spline.design/c1CILr5VqKGYhoDt/scene.splinecode"
+          onLoad={() => setIsSplineLoaded(true)}
+        />
       </div>
 
       <AnimatedCursor

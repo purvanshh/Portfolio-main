@@ -44,6 +44,12 @@ body {
   z-index: 0;
   pointer-events: auto;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.spline-background.fade-in {
+  opacity: 1;
 }
 
 .spline-background canvas {

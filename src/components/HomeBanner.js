@@ -1,6 +1,6 @@
 import React from 'react';
 import "./HomeBannerStyle.css";
-import cartoon from "../images/AnimeBack.png";
+// import cartoon from "../images/AnimeBack.png";
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
@@ -17,7 +17,7 @@ export default function HomeBanner({id}) {
             </div>
         </div>
         <div className="mask">
-            <img className='bg' src={cartoon} alt="boy-with-laptop" />
+            {/* <img className='bg' src={cartoon} alt="boy-with-laptop" /> */}
         </div>
     </div>
   )
