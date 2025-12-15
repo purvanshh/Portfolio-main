@@ -52,7 +52,7 @@ body {
   opacity: 1;
 }
 
-.spline-background canvas {
+.spline-background spline-viewer {
   width: 100% !important;
   height: 100% !important;
 }

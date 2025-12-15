@@ -9,11 +9,6 @@ import SkillCard from './components/SkillCard'
 import ContactForm from './components/ContactForm'
 import AnimatedCursor from "react-animated-cursor"
 import SplineErrorBoundary from "./components/SplineErrorBoundary";
-
-// Lazy load Spline to isolate it from the main bundle
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
-
-
 function App() {
   const [theme, setTheme] = useState(() => {
     try {
@@ -33,19 +28,12 @@ function App() {
 
   const toggleTheme = () => setTheme(t => (t === 'light' ? 'dark' : 'light'));
 
-  const [isSplineLoaded, setIsSplineLoaded] = useState(false);
-
   return (
     <>
       <SplineErrorBoundary>
-        <React.Suspense fallback={null}>
-          <div className={`spline-background ${isSplineLoaded ? 'fade-in' : ''}`}>
-            <Spline
-              scene="https://prod.spline.design/c1CILr5VqKGYhoDt/scene.splinecode"
-              onLoad={() => setIsSplineLoaded(true)}
-            />
-          </div>
-        </React.Suspense>
+        <div className="spline-background fade-in" style={{ opacity: 1 }}>
+          <spline-viewer url="https://prod.spline.design/c1CILr5VqKGYhoDt/scene.splinecode"></spline-viewer>
+        </div>
       </SplineErrorBoundary>
 
       <AnimatedCursor
