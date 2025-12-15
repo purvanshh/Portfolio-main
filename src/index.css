@@ -45,7 +45,7 @@ body {
   pointer-events: auto;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .spline-background.fade-in {
