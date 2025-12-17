@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./index.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -10,23 +10,7 @@ import ContactForm from './components/ContactForm'
 import AnimatedCursor from "react-animated-cursor"
 import SplineErrorBoundary from "./components/SplineErrorBoundary";
 function App() {
-  const [theme, setTheme] = useState(() => {
-    try {
-      return localStorage.getItem('theme') || 'dark';
-    } catch (e) {
-      return 'dark';
-    }
-  });
 
-  useEffect(() => {
-    const root = document.documentElement;
-    root.setAttribute('data-theme', theme === 'light' ? 'light' : 'dark');
-    try {
-      localStorage.setItem('theme', theme);
-    } catch (e) { }
-  }, [theme]);
-
-  const toggleTheme = () => setTheme(t => (t === 'light' ? 'dark' : 'light'));
 
   return (
     <>
@@ -52,7 +36,7 @@ function App() {
         }}
       />
       <div className="main-content">
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <Navbar />
         <HomeBanner id="home" />
 
         <ProjectCard

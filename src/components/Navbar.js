@@ -9,14 +9,14 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-export default function Navbar({ theme, toggleTheme }) {
+export default function Navbar() {
   const [click, setClick] = useState(false);
   const handleCLick = () => setClick(!click);
 
   return (
     <nav className="header">
       <div className="logo">
-        <Link 
+        <Link
           activeClass="active"
           to="home"
           spy={true}
@@ -35,7 +35,7 @@ export default function Navbar({ theme, toggleTheme }) {
       >
         <li>
           <Link
-          className="navLink"
+            className="navLink"
             activeClass="active"
             to="project"
             spy={true}
@@ -45,7 +45,7 @@ export default function Navbar({ theme, toggleTheme }) {
         </li>
         <li>
           <Link
-          className="navLink"
+            className="navLink"
             activeClass="active"
             to="about"
             spy={true}
@@ -55,7 +55,7 @@ export default function Navbar({ theme, toggleTheme }) {
         </li>
         <li>
           <Link
-          className="navLink" 
+            className="navLink"
             activeClass="active"
             to="skills"
             spy={true}
@@ -64,7 +64,7 @@ export default function Navbar({ theme, toggleTheme }) {
         </li>
         <li>
           <Link
-          className="navLink"
+            className="navLink"
             activeClass="active"
             to="contact"
             spy={true}
@@ -73,7 +73,7 @@ export default function Navbar({ theme, toggleTheme }) {
           >Contact</Link>
         </li>
       </ul>
-  <div className={click ? "social-links active" : "social-links"}>
+      <div className={click ? "social-links active" : "social-links"}>
         <a
           href="https://www.linkedin.com/in/purvansh-sahu-25b24228a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxTANszurROeQZKtAIMwDrQ%3D%3D"
           target="_blank"
@@ -108,11 +108,7 @@ export default function Navbar({ theme, toggleTheme }) {
           />
         </a>
       </div>
-      <div className="theme-toggle">
-        <button onClick={toggleTheme} aria-label="Toggle theme" className={theme === 'light' ? 'light' : 'dark'}>
-          {theme === 'light' ? '🌞' : '🌙'}
-        </button>
-      </div>
+
       <div className="hamburger" onClick={handleCLick}>
         {click ? (
           <FaTimes className="bars" size={25} style={{ color: 'var(--text)' }} />

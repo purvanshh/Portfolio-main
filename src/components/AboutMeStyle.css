@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    position: relative; 
+    position: relative;
     margin: 80px 7vw 0 15vw;
     padding-top: 20px;
     align-items: flex-start;
@@ -11,7 +11,8 @@
     margin-left: 0;
     height: fit-content;
     padding: 0;
-    width: 320px; /* fixed column for image */
+    width: 200px;
+    /* fixed column for image */
     flex-shrink: 0;
 }
 
@@ -43,7 +44,7 @@
     font-family: 'Intro', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(-86deg, #ffe1a0  5%, #f67280 53%, #F94892 91%);
+    background: -webkit-linear-gradient(-86deg, #ffe1a0 5%, #f67280 53%, #F94892 91%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;
     background-clip: text;
@@ -53,7 +54,7 @@
 
 .about-container .aboutMe-text {
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 400;
     color: var(--muted-text);
     height: fit-content;
     line-height: 1.6;
@@ -66,7 +67,7 @@
 }
 
 .about-container .aboutMe-text h3 {
-    color: var(--text);    
+    color: var(--text);
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -88,6 +89,7 @@
     .about-container .aboutMe-text {
         font-size: 16px;
     }
+
     .about-container .name {
         font-size: 80px;
         width: 80px;
@@ -102,7 +104,8 @@
         align-items: center;
     }
 
-    .heading, .about-container .name {
+    .heading,
+    .about-container .name {
         display: none;
     }
 

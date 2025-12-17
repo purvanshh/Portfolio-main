@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMeStyle.css";
-import myProfile from "../images/Profile Image.png";
+// import myProfile from "../images/Profile Image.png";
 
 export default function AboutMe({ id }) {
   return (
@@ -13,7 +13,7 @@ export default function AboutMe({ id }) {
           Want to know more about me? Feel free to <a className='resume' href="https://drive.google.com/drive/folders/1CC-_PmNC08sz2GFfAkkWZguPWKMKxmTr?usp=sharing" target="_blank" rel="noopener noreferrer">explore my resume.</a>
         </div>
         <div className="profile-photo">
-          <img className="img" src={myProfile} alt="Profile"></img>
+          {/* <img className="img" src={myProfile} alt="Profile"></img> */}
         </div>
         <div className="name"></div>
       </div>
