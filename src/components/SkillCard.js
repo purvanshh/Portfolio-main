@@ -1,4 +1,3 @@
-import React from 'react'
 import "./SkillCardStyle.css";
 import { SiPython, SiMysql, SiScikitlearn, SiPandas, SiNumpy, SiJupyter, SiFastapi, SiDocker, SiSwagger, SiPostman, SiJava } from "react-icons/si";
 import {DiGit} from "react-icons/di";

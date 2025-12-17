@@ -1,4 +1,3 @@
-import React from 'react';
 import "./ProjectCardStyle.css";
 import { FaArrowRight } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";

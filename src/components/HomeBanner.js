@@ -1,4 +1,3 @@
-import React from 'react';
 import "./HomeBannerStyle.css";
 // import cartoon from "../images/AnimeBack.png";
 export default function HomeBanner({id}) {
