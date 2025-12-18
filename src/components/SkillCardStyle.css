@@ -39,17 +39,10 @@
     height: 120px;
     width: auto;
     padding: 30px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
 }
 
-.skill-box .skillset abbr .techLogo:hover{
-    border: 2px solid var(--accent);
-    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.06);
-    transform: scale(1.15);
-}
-
-@media screen and (max-width: 1040px), (max-height: 550px) {
+@media screen and (max-width: 1040px),
+(max-height: 550px) {
 
     .skill-container {
         margin: 50px 7vw 0px 20vw;
@@ -58,7 +51,7 @@
 
 @media screen and (max-width: 750px) {
     .skill-container {
-        padding-top:  80px;
+        padding-top: 80px;
         margin: 0 50px 0px;
     }
 

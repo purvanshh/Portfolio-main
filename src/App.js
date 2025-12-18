@@ -50,6 +50,34 @@ function App() {
 
         <ProjectCard
           className="odd"
+          projectTitle="MyPA"
+          projectDesc="Your Personal AI Assistant - Blazingly-Fast, Open-source, and Free. Features privacy-first local storage, BYO API keys, Chat Navigator, Google Gemini support, and an optimized React codebase."
+          projectLink="https://github.com/purvanshh/MyPA"
+          deployedProjectLink="https://mypa-omega.vercel.app/chat"
+          projectImg={require('./images/mypa-omega-vercel-app-chat.png')}
+        />
+
+        <ProjectCard
+          className="even"
+          projectTitle="Delivery Operations Intelligence"
+          projectDesc="An AI-powered operations intelligence platform for restaurants to identify, prioritize, and resolve delivery issues. Features real-time KPIs, AI root cause analysis with confidence scores, one-click chargeback filing, and revenue recovery tracking. Built with React, TypeScript, Tailwind CSS, Framer Motion, and FastAPI."
+          projectLink="https://github.com/purvanshh/Delivery-Operations-Inteligence"
+          deployedProjectLink="https://github.com/purvanshh/Delivery-Operations-Inteligence"
+          projectImg={require('./images/image.png')}
+        />
+
+        <ProjectCard
+          className="odd"
+          projectTitle="PocketExpense+"
+          projectDesc="A premium expense tracking mobile app with Violet Glassmorphism design. Features JWT authentication, full CRUD operations, monthly/daily analytics, offline sync, budget alerts, and smooth animations. Built with React Native, Expo SDK 54, Redux Toolkit, Node.js, Express, and MongoDB."
+          projectLink="https://github.com/purvanshh/PocketExpense-"
+          deployedProjectLink="https://github.com/purvanshh/PocketExpense-"
+          projectImg={require('./images/SCR-20251219-bgxe.png')}
+          isMobileApp={true}
+        />
+
+        <ProjectCard
+          className="even"
           projectTitle="FitTrack Pro"
           projectDesc="A comprehensive fitness tracking mobile app built with React Native and Expo. Features workout tracking, water intake monitoring, meal logging, weekly analytics with interactive charts, streak counter, push notifications, and beautiful dark mode with glassmorphism design."
           projectLink="https://github.com/purvanshh/fittrack-pro"
@@ -59,22 +87,13 @@ function App() {
         />
 
         <ProjectCard
-          className="even"
+          className="odd"
           projectTitle="FarmFresh"
           projectDesc="A modern e-commerce mobile app for ordering fresh produce, built with React Native and Expo. Features secure authentication, product catalog with categories, cart management, integrated Stripe payments, order history, and location services with a premium NativeWind styled UI."
           projectLink="https://github.com/purvanshh/Quick-E-Commerce"
           deployedProjectLink="https://github.com/purvanshh/Quick-E-Commerce"
           projectImg={require('./images/FarmFresh.jpeg')}
           isMobileApp={true}
-        />
-
-        <ProjectCard
-          className="odd"
-          projectTitle="MyPA"
-          projectDesc="Your Personal AI Assistant - Blazingly-Fast, Open-source, and Free. Features privacy-first local storage, BYO API keys, Chat Navigator, Google Gemini support, and an optimized React codebase."
-          projectLink="https://github.com/purvanshh/MyPA"
-          deployedProjectLink="https://mypa-omega.vercel.app/chat"
-          projectImg={require('./images/mypa-omega-vercel-app-chat.png')}
         />
 
         <AboutMe id='about' />
