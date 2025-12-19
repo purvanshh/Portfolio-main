@@ -38,63 +38,64 @@ function App() {
         <Navbar />
         <HomeBanner id="home" />
 
-        <ProjectCard
-          id="project"
-          projectTitle="BrainWave"
-          className="even"
-          projectDesc="Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general."
-          projectLink="https://github.com/purvanshh/BrainWave"
-          deployedProjectLink="https://brainwave-iota-ten.vercel.app/"
-          projectImg={require('./images/brainwave.png')}
-        />
+        {/* PROJECTS */}
+<ProjectCard
+  id="project"
+  className="even"
+  projectTitle="Delivery Operations Intelligence"
+  projectDesc="AI-powered operations analytics platform for restaurant delivery teams. Built real-time KPI dashboards, AI-based root cause analysis with confidence scores, issue prioritization workflows, and revenue recovery tracking. Designed and implemented full-stack architecture with data-heavy UI and scalable backend APIs."
+  projectLink="https://github.com/purvanshh/Delivery-Operations-Inteligence"
+  deployedProjectLink="https://github.com/purvanshh/Delivery-Operations-Inteligence"
+  projectImg={require('./images/image.png')}
+/>
 
-        <ProjectCard
-          className="odd"
-          projectTitle="MyPA"
-          projectDesc="Your Personal AI Assistant - Blazingly-Fast, Open-source, and Free. Features privacy-first local storage, BYO API keys, Chat Navigator, Google Gemini support, and an optimized React codebase."
-          projectLink="https://github.com/purvanshh/MyPA"
-          deployedProjectLink="https://mypa-omega.vercel.app/chat"
-          projectImg={require('./images/mypa-omega-vercel-app-chat.png')}
-        />
+<ProjectCard
+  className="odd"
+  projectTitle="PocketExpense+"
+  projectDesc="Production-grade expense tracking mobile app with JWT authentication, offline sync, CRUD operations, and analytics dashboards. Includes daily/monthly insights, budget alerts, and smooth animated UI while maintaining performance and state consistency."
+  projectLink="https://github.com/purvanshh/PocketExpense-"
+  deployedProjectLink="https://github.com/purvanshh/PocketExpense-"
+  projectImg={require('./images/SCR-20251219-bgxe.png')}
+  isMobileApp={true}
+/>
 
-        <ProjectCard
-          className="even"
-          projectTitle="Delivery Operations Intelligence"
-          projectDesc="An AI-powered operations intelligence platform for restaurants to identify, prioritize, and resolve delivery issues. Features real-time KPIs, AI root cause analysis with confidence scores, one-click chargeback filing, and revenue recovery tracking. Built with React, TypeScript, Tailwind CSS, Framer Motion, and FastAPI."
-          projectLink="https://github.com/purvanshh/Delivery-Operations-Inteligence"
-          deployedProjectLink="https://github.com/purvanshh/Delivery-Operations-Inteligence"
-          projectImg={require('./images/image.png')}
-        />
+<ProjectCard
+  className="even"
+  projectTitle="FarmFresh"
+  projectDesc="End-to-end e-commerce mobile app for ordering fresh produce. Implemented secure authentication, cart and order flows, Stripe payments, location services, and clean state management with a focus on scalable user experience."
+  projectLink="https://github.com/purvanshh/Quick-E-Commerce"
+  deployedProjectLink="https://github.com/purvanshh/Quick-E-Commerce"
+  projectImg={require('./images/FarmFresh.jpeg')}
+  isMobileApp={true}
+/>
 
-        <ProjectCard
-          className="odd"
-          projectTitle="PocketExpense+"
-          projectDesc="A premium expense tracking mobile app with Violet Glassmorphism design. Features JWT authentication, full CRUD operations, monthly/daily analytics, offline sync, budget alerts, and smooth animations. Built with React Native, Expo SDK 54, Redux Toolkit, Node.js, Express, and MongoDB."
-          projectLink="https://github.com/purvanshh/PocketExpense-"
-          deployedProjectLink="https://github.com/purvanshh/PocketExpense-"
-          projectImg={require('./images/SCR-20251219-bgxe.png')}
-          isMobileApp={true}
-        />
+<ProjectCard
+  className="odd"
+  projectTitle="MyPA (Personal AI Assistant)"
+  projectDesc="Privacy-first AI assistant with local storage and bring-your-own API keys. Supports multiple AI models with optimized React rendering, chat navigation, and extensible architecture focused on speed and user control."
+  projectLink="https://github.com/purvanshh/MyPA"
+  deployedProjectLink="https://mypa-omega.vercel.app/chat"
+  projectImg={require('./images/mypa-omega-vercel-app-chat.png')}
+/>
 
-        <ProjectCard
-          className="even"
-          projectTitle="FitTrack Pro"
-          projectDesc="A comprehensive fitness tracking mobile app built with React Native and Expo. Features workout tracking, water intake monitoring, meal logging, weekly analytics with interactive charts, streak counter, push notifications, and beautiful dark mode with glassmorphism design."
-          projectLink="https://github.com/purvanshh/fittrack-pro"
-          deployedProjectLink="https://github.com/purvanshh/fittrack-pro/releases"
-          projectImg={require('./images/FitTrackPro.jpeg')}
-          isMobileApp={true}
-        />
+<ProjectCard
+  className="even"
+  projectTitle="FitTrack Pro"
+  projectDesc="Fitness tracking mobile app with workout logging, hydration and meal tracking, streaks, and weekly analytics. Built interactive charts, push notifications, and a smooth dark-mode experience with clean data visualization."
+  projectLink="https://github.com/purvanshh/fittrack-pro"
+  deployedProjectLink="https://github.com/purvanshh/fittrack-pro/releases"
+  projectImg={require('./images/FitTrackPro.jpeg')}
+  isMobileApp={true}
+/>
 
-        <ProjectCard
-          className="odd"
-          projectTitle="FarmFresh"
-          projectDesc="A modern e-commerce mobile app for ordering fresh produce, built with React Native and Expo. Features secure authentication, product catalog with categories, cart management, integrated Stripe payments, order history, and location services with a premium NativeWind styled UI."
-          projectLink="https://github.com/purvanshh/Quick-E-Commerce"
-          deployedProjectLink="https://github.com/purvanshh/Quick-E-Commerce"
-          projectImg={require('./images/FarmFresh.jpeg')}
-          isMobileApp={true}
-        />
+<ProjectCard
+  className="odd"
+  projectTitle="BrainWave"
+  projectDesc="Modern UI/UX showcase implementing responsive layouts, smooth animations, and clean component structure. Built as a design-focused project to explore modern frontend patterns and visual polish."
+  projectLink="https://github.com/purvanshh/BrainWave"
+  deployedProjectLink="https://brainwave-iota-ten.vercel.app/"
+  projectImg={require('./images/brainwave.png')}
+/>
 
         <AboutMe id='about' />
         <SkillCard id='skills' />

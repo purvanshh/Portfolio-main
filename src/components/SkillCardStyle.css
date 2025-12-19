@@ -60,3 +60,9 @@
         padding: 14px;
     }
 }
+
+.skill-subtext {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-bottom: 0.75rem;
+}
