@@ -3,7 +3,6 @@ import "./NavbarStyle.css";
 import { Link } from "react-scroll";
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedin,
   FaBars,
   FaTimes,
@@ -72,6 +71,14 @@ export default function Navbar() {
             duration={30}
           >Contact</Link>
         </li>
+        <li>
+          <a
+            className="navLink"
+            href="https://purvanshsahu.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >ML Portfolio</a>
+        </li>
       </ul>
       <div className={click ? "social-links active" : "social-links"}>
         <a
@@ -91,17 +98,6 @@ export default function Navbar() {
           rel="noopener noreferrer"
         >
           <FaGithub
-            className="social"
-            size={25}
-            style={{ marginRight: "2rem" }}
-          />
-        </a>
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram
             className="social"
             size={25}
             style={{ marginRight: "2rem" }}
